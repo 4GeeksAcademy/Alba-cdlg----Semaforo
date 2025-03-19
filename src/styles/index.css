@@ -2,6 +2,19 @@
 .container {
   text-align: center;
 }
+
+.traffic-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.traffic-pole {
+  width: 20px;
+  height: 100px;
+  background-color: black;
+}
+
 .traffic-light {
   background-color: black;
   padding: 10px;
