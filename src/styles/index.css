@@ -1,4 +1,7 @@
 /* @import ".... */
+.container {
+  text-align: center;
+}
 .traffic-light {
   background-color: black;
   padding: 10px;
@@ -25,6 +28,6 @@
   background-color: green;
 }
 
-.glow{
-    box-shadow: 0px 0px 9px 4px #747de8;
+.glow {
+  box-shadow: 0px 0px 9px 4px #747de8;
 }
