@@ -8,6 +8,16 @@ import rigoImage from "../../img/rigo-baby.jpg";
 export function Home() {
   const [selectedColor, setSelectedColor] = useState("red");
 
+  const changeLight = () => {
+    if (selectedColor === "red") {
+      setSelectedColor("yellow");
+    } else if (selectedColor === "yellow") {
+      setSelectedColor("green");
+    } else {
+      setSelectedColor("red");
+    }
+  };
+
   return (
     <div className="traffic-container">
       <div className="traffic-pole"></div>
@@ -31,6 +41,9 @@ export function Home() {
               "light green" + (selectedColor === "green" ? " glow" : "")
             }
           ></div>
+        </div>
+        <div className="button-container">
+          <button onClick={changeLight}>Cambiar Luz</button>
         </div>
       </div>
     </div>
